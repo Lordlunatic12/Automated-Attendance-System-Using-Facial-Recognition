@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: qlineargradient(spread:pad, x1:0.14, y1:0.028, x2:1, y2:0.051, stop:0 rgba(37, 69, 198, 255), stop:1 rgba(21, 38, 111, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>410</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: #333;
+    border: 2px solid #555;
+    border-radius: 20px;
+    border-style: outset;
+	background-color: rgb(0,240,112);
+    padding: 5px;
+    }
+
+QPushButton:hover {
+     border-radius:2px;
+	 border-color: white;
+border-radius: 20px;
+color: white
+    }
+
+QPushButton:pressed {
+    border-style: inset;
+color: black;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+        );
+    }</string>
+    </property>
+    <property name="text">
+     <string>Cummulative Attendance</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>200</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255);
+background-color:rgba(0,0,0,0%);</string>
+    </property>
+    <property name="text">
+     <string>Enter Subject Name</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>200</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 6em;
+    background-color:white;
+}
+
+QComboBox:on {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+QComboBox::drop-down {
+
+    drop-down-color:white;
+ 
+}
+
+
+QComboBox QAbstractItemView {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: white;
+    border: 1px solid gray;
+    box-shadow: transparent;
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>--Subject Name--</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNND</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NETWORK-LAB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MPL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EM-IV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UNIX-LAB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PYTHON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PYTHON-LAB</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgba(0,0,0,0%);
+color: white;
+}
+QPushButton:hover{
+background-color:rgba(0,0,0,30%);
+color: white;
+border: 0px solid;
+border-style: outset;
+border-radius: 5px;
+}
+
+QPushButton:pressed{
+ border-style: inset;
+color: black;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+        );
+}</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>340</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: #333;
+    border: 2px solid #555;
+    border-radius: 20px;
+    border-style: outset;
+	background-color: rgb(0,240,112);
+    padding: 5px;
+    }
+
+QPushButton:hover {
+     border-radius:2px;
+	 border-color: white;
+border-radius: 20px;
+color: white
+    }
+
+QPushButton:pressed {
+    border-style: inset;
+color: black;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #fff, stop: 1 #ddd
+        );
+    }</string>
+    </property>
+    <property name="text">
+     <string>View Excel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
